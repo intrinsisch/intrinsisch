@@ -1,0 +1,25 @@
+@use "sass:map";
+@use "../general/" as g;
+@use "../utils/" as u;
+
+$_var-spacing: map.get(g.$spacing-vars, "spacing");
+$_var-sbr-basis: u.create-property("sbr", "basis");
+
+@include g.use-framework-layer(layout) {
+  .sidebar-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(#{$_var-spacing}, #{g.get-spacing(5)});
+
+    > .sidebar {
+      flex-grow: 1;
+      flex-basis: var(#{$_var-sbr-basis}, fit-content);
+    }
+
+    > :not(.sidebar) {
+      flex-basis: 0;
+      flex-grow: 999;
+      min-inline-size: 50%;
+    }
+  }
+}

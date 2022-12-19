@@ -1,0 +1,12 @@
+@use "../general/globals";
+
+@function create-property($prefix, $component, $variant: false, $global: false) {
+  @if $variant {
+    $component: #{$component}#{globals.$separator2}#{$variant};
+  }
+  $local: #{$prefix}#{globals.$separator2}#{$component};
+  @if $global {
+    @return --#{globals.$prefix}#{globals.$separator1}#{$local};
+  }
+  @return --#{$local};
+}

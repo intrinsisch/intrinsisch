@@ -1,0 +1,20 @@
+@use "sass:map";
+@use "spacing-definitions" as def;
+@use "spacing-utils" as utils;
+@use "../layers/" as lay;
+
+$_var-spacing: map.get(def.$vars, "spacing");
+
+@include lay.use-framework-layer(globals) {
+  :root {
+    @each $size, $value in def.$map {
+      #{#{utils.get-spacing-var-name($size)}}: #{$value};
+    }
+  }
+
+  @each $size, $value in def.$map {
+    .#{def.$prefix}-#{$size} {
+      #{$_var-spacing}: #{utils.get-spacing($size)};
+    }
+  }
+}

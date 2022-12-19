@@ -1,0 +1,11 @@
+@use "../../utils/" as u;
+@use "../globals";
+@use "spacing-definitions" as def;
+
+@function get-spacing-var-name($variant) {
+  @return u.create-property($prefix: def.$prefix, $component: $variant, $global: true);
+}
+
+@function get-spacing($variant) {
+  @return var(#{get-spacing-var-name($variant)});
+}

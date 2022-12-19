@@ -1,0 +1,13 @@
+@use "sass:map";
+@use "../general/" as g;
+
+$_var-spacing: map.get(g.$spacing-vars, "spacing");
+
+@include g.use-framework-layer(layout) {
+  .stack {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: var(#{$_var-spacing}, #{g.get-spacing(5)});
+  }
+}

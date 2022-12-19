@@ -1,0 +1,113 @@
+@use "vendor/radix-colors" as rdx;
+@use "../../utils/" as u;
+
+/**
+ * Semantic colors, overridable
+ */
+
+$color-primary: (
+  background: rdx.$pink02,
+  component: rdx.$pink03,
+  component-hover: rdx.$pink04,
+  component-active: rdx.$pink05,
+  border: rdx.$pink06,
+  text: rdx.$pink12,
+  text-hover: rdx.$pink12,
+) !default;
+
+$color-primary-dark: (
+  background: rdx.$pinkDark02,
+  component: rdx.$pinkDark03,
+  component-hover: rdx.$pinkDark04,
+  component-active: rdx.$pinkDark05,
+  border: rdx.$pinkDark06,
+  text: rdx.$pinkDark12,
+  text-hover: rdx.$pinkDark12,
+) !default;
+
+$color-secondary: (
+  background: rdx.$teal02,
+  component: rdx.$teal03,
+  component-hover: rdx.$teal04,
+  component-active: rdx.$teal05,
+  border: rdx.$teal06,
+  text: rdx.$teal12,
+  text-hover: rdx.$teal12,
+) !default;
+
+$color-secondary-dark: (
+  background: rdx.$tealDark02,
+  component: rdx.$tealDark03,
+  component-hover: rdx.$tealDark04,
+  component-active: rdx.$tealDark05,
+  border: rdx.$tealDark06,
+  text: rdx.$tealDark12,
+  text-hover: rdx.$tealDark12,
+) !default;
+
+$color-accent: (
+  background: rdx.$blue02,
+  component: rdx.$blue03,
+  component-hover: rdx.$blue04,
+  component-active: rdx.$blue05,
+  border: rdx.$blue06,
+  text: rdx.$blue12,
+  text-hover: rdx.$blue12,
+) !default;
+
+$color-accent-dark: (
+  background: rdx.$blueDark02,
+  component: rdx.$blueDark03,
+  component-hover: rdx.$blueDark04,
+  component-active: rdx.$blueDark05,
+  border: rdx.$blueDark06,
+  text: rdx.$blueDark12,
+  text-hover: rdx.$blueDark12,
+) !default;
+
+$color-neutral: (
+  background: rdx.$mauve02,
+  component: rdx.$mauve03,
+  component-hover: rdx.$mauve04,
+  component-active: rdx.$mauve05,
+  border: rdx.$mauve06,
+  text: rdx.$mauve12,
+  text-hover: rdx.$mauve12,
+) !default;
+
+$color-neutral-dark: (
+  background: rdx.$mauveDark02,
+  component: rdx.$mauveDark03,
+  component-hover: rdx.$mauveDark04,
+  component-active: rdx.$mauveDark05,
+  border: rdx.$mauveDark06,
+  text: rdx.$mauveDark12,
+  text-hover: rdx.$mauveDark12,
+) !default;
+
+/**
+ * Helpers
+ */
+
+$prefix: clr;
+$map: (
+  primary: $color-primary,
+  primary-dark: $color-primary-dark,
+  secondary: $color-secondary,
+  secondary-dark: $color-secondary-dark,
+  accent: $color-accent,
+  accent-dark: $color-accent-dark,
+  neutral: $color-neutral,
+  neutral-dark: $color-neutral-dark,
+);
+$vars: (
+  type-props: (
+    background: u.create-property($prefix, "background"),
+    component: u.create-property($prefix, "component"),
+    component-hover: u.create-property($prefix, "component-hover"),
+    component-active: u.create-property($prefix, "component-active"),
+    border: u.create-property($prefix, "border"),
+    text: u.create-property($prefix, "text"),
+    text-hover: u.create-property($prefix, "text-hover"),
+  ),
+);

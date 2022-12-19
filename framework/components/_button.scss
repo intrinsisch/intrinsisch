@@ -1,0 +1,36 @@
+@use "../general/" as g;
+@use "../utils/" as u;
+
+$_var-color: u.create-property("btn", "color");
+$_var-background-color: u.create-property("btn", "background-color");
+$_var-border-color: u.create-property("btn", "border-color");
+
+@include g.use-framework-layer(components) {
+  button {
+    cursor: pointer;
+
+    @include g.load-color-palette("primary");
+    #{$_var-color}: g.get-color-local("text");
+    #{$_var-background-color}: g.get-color-local("component");
+    #{$_var-border-color}: g.get-color-local("border");
+    color: var(#{$_var-color});
+    background-color: var(#{$_var-background-color});
+    border: 1px solid var(#{$_var-border-color});
+
+    padding: g.get-spacing(1) g.get-spacing(4);
+
+    &:is([aria-current], :hover, :active, :focus) {
+      #{$_var-background-color}: g.get-color-local("component-hover");
+    }
+
+    &:focus {
+      #{$_var-background-color}: g.get-color-local("component-active");
+    }
+
+    @each $type, $_ in g.$color-map {
+      &:where(.#{$type}) {
+        @include g.load-color-palette($type);
+      }
+    }
+  }
+}

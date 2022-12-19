@@ -1,0 +1,13 @@
+@use "color-definitions" as def;
+@use "color-utils" as utils;
+@use "../layers/" as lay;
+
+@include lay.use-framework-layer(globals) {
+  :root {
+    @each $variant, $values in def.$map {
+      @each $type, $value in $values {
+        #{utils.get-color-var-name($variant, $type)}: #{$value};
+      }
+    }
+  }
+}
