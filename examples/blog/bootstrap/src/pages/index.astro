@@ -1,15 +1,19 @@
 ---
+import "../styles/main.scss";
+import { Footer } from "../components/main/Footer";
+import { Main } from "../components/main/Main";
+import { Navbar } from "../components/main/Navbar";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Bootstrap: Blog</title>
+  </head>
+  <body class="bg-warning">
+    <Navbar client:load />
+    <Main />
+    <Footer />
+  </body>
 </html>
