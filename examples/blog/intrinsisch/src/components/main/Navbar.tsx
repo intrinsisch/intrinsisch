@@ -4,7 +4,7 @@ export const Navbar = (): JSX.Element => {
   const [collapsed, setCollapsed] = createSignal(true);
 
   return (
-    <nav class="container navbar navbar-expand-lg sticky-top bg-warning">
+    <nav class="container cluster">
       <a class="navbar-brand fw-bold font-monospace text-uppercase" href="#">
         Intrinsisch&#92;Blog
       </a>

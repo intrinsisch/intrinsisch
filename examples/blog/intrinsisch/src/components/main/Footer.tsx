@@ -3,7 +3,7 @@ import type { JSX } from "solid-js/jsx-runtime";
 export const Footer = (): JSX.Element => {
   return (
     <footer class="container stack">
-      <div class="row">
+      <div class="grid spa-6">
         <div class="stack spa-2">
           <h5 class="fw-bolder">Newsletter</h5>
           <p>Sign up to our weekly newsletter:</p>
@@ -25,7 +25,7 @@ export const Footer = (): JSX.Element => {
         </div>
         <div class="stack spa-2">
           <h5>Meta links</h5>
-          <div class="list-group list-group-flush">
+          <div class="stack spa-1">
             <button
               type="button"
               class="list-group-item list-group-item-action"
