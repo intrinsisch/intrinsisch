@@ -1,6 +1,9 @@
 @use "color-definitions" as def;
 @use "color-utils" as utils;
 @use "../layers/" as lay;
+@use "../../utils/" as u;
+
+$_var-anchor-color: u.create-property("anchor", "color");
 
 @include lay.use-framework-layer(globals) {
   :root {
@@ -8,6 +11,16 @@
       @each $type, $value in $values {
         #{utils.get-color-var-name($variant, $type)}: #{$value};
       }
+    }
+  }
+
+  a {
+    @include utils.load-color-palette("accent");
+    #{$_var-anchor-color}: utils.get-color-local("text");
+    color: var(#{$_var-anchor-color});
+
+    &:is([aria-current], :hover, :active, :focus) {
+      #{$_var-anchor-color}: utils.get-color-local("text-hover");
     }
   }
 }

@@ -6,43 +6,44 @@
  */
 
 $color-primary: (
-  background: rdx.$pink02,
-  component: rdx.$pink03,
-  component-hover: rdx.$pink04,
-  component-active: rdx.$pink05,
-  border: rdx.$pink06,
-  text: rdx.$pink12,
-  text-hover: rdx.$pink12,
-) !default;
-
-$color-primary-dark: (
-  background: rdx.$pinkDark02,
-  component: rdx.$pinkDark03,
-  component-hover: rdx.$pinkDark04,
-  component-active: rdx.$pinkDark05,
-  border: rdx.$pinkDark06,
-  text: rdx.$pinkDark12,
-  text-hover: rdx.$pinkDark12,
-) !default;
-
-$color-secondary: (
   background: rdx.$teal02,
   component: rdx.$teal03,
   component-hover: rdx.$teal04,
   component-active: rdx.$teal05,
   border: rdx.$teal06,
   text: rdx.$teal12,
-  text-hover: rdx.$teal12,
+  text-hover: rdx.$teal11,
 ) !default;
 
-$color-secondary-dark: (
+$color-primary-dark: (
   background: rdx.$tealDark02,
   component: rdx.$tealDark03,
   component-hover: rdx.$tealDark04,
   component-active: rdx.$tealDark05,
   border: rdx.$tealDark06,
   text: rdx.$tealDark12,
-  text-hover: rdx.$tealDark12,
+  text-hover: rdx.$tealDark11,
+) !default;
+
+
+$color-secondary: (
+  background: rdx.$pink02,
+  component: rdx.$pink03,
+  component-hover: rdx.$pink04,
+  component-active: rdx.$pink05,
+  border: rdx.$pink06,
+  text: rdx.$pink12,
+  text-hover: rdx.$pink11,
+) !default;
+
+$color-secondary-dark: (
+  background: rdx.$pinkDark02,
+  component: rdx.$pinkDark03,
+  component-hover: rdx.$pinkDark04,
+  component-active: rdx.$pinkDark05,
+  border: rdx.$pinkDark06,
+  text: rdx.$pinkDark12,
+  text-hover: rdx.$pinkDark11,
 ) !default;
 
 $color-accent: (
@@ -52,7 +53,7 @@ $color-accent: (
   component-active: rdx.$blue05,
   border: rdx.$blue06,
   text: rdx.$blue12,
-  text-hover: rdx.$blue12,
+  text-hover: rdx.$blue11,
 ) !default;
 
 $color-accent-dark: (
@@ -62,7 +63,7 @@ $color-accent-dark: (
   component-active: rdx.$blueDark05,
   border: rdx.$blueDark06,
   text: rdx.$blueDark12,
-  text-hover: rdx.$blueDark12,
+  text-hover: rdx.$blueDark11,
 ) !default;
 
 $color-neutral: (
@@ -72,7 +73,7 @@ $color-neutral: (
   component-active: rdx.$mauve05,
   border: rdx.$mauve06,
   text: rdx.$mauve12,
-  text-hover: rdx.$mauve12,
+  text-hover: rdx.$mauve11,
 ) !default;
 
 $color-neutral-dark: (
@@ -82,7 +83,7 @@ $color-neutral-dark: (
   component-active: rdx.$mauveDark05,
   border: rdx.$mauveDark06,
   text: rdx.$mauveDark12,
-  text-hover: rdx.$mauveDark12,
+  text-hover: rdx.$mauveDark11,
 ) !default;
 
 /**
