@@ -2,9 +2,9 @@
 @use "../utils/" as u;
 
 $container-map: (
-  sm: 30rem,
-  md: 45rem,
-  lg: 60rem,
+  sm: 50rem,
+  md: 70rem,
+  lg: 90rem,
 ) !default;
 
 $_var-con-spacing: u.create-property("con", "spacing");
