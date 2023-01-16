@@ -20,7 +20,7 @@ export const Navbar = (): JSX.Element => {
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class={`collapse navbar-collapse ${collapsed() || "show"}`}>
-        <ul class="cluster">
+        <ul class="cluster unlist">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
               Home

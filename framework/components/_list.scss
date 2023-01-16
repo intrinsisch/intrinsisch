@@ -1,0 +1,8 @@
+@use "../general/" as g;
+
+@include g.use-framework-layer(components) {
+  .unlist {
+    list-style: none;
+    padding: 0;
+  }
+}

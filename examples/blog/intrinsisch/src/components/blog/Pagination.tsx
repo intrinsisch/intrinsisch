@@ -3,7 +3,7 @@ import type { JSX } from "solid-js/jsx-runtime";
 export const Pagination = (): JSX.Element => {
   return (
     <nav aria-label="Page navigation example">
-      <ul class="cluster">
+      <ul class="cluster unlist">
         <li class="page-item">
           <a class="page-link" href="#" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
