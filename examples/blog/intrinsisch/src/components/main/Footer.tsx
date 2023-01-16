@@ -49,11 +49,11 @@ export const Footer = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <div class="text-center py-5">
+      <div class="typ-center py-5">
         <span>&copy;</span>
-        <span class="fst-italic font-monospace">2023 Blog </span>
+        <span class="typ-italic typ-monospace">2023 Blog </span>
         <span>&#92;</span>
-        <span class="fst-italic font-monospace"> Themed with Intrinsisch</span>
+        <span class="typ-italic typ-monospace"> Themed with Intrinsisch</span>
       </div>
     </footer>
   );

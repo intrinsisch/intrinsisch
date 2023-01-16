@@ -1,0 +1,28 @@
+@use "typography-definitions" as def;
+@use "typography-utils" as utils;
+@use "../layers/" as lay;
+
+@include lay.use-framework-layer(globals) {
+  :root {
+    @each $variant, $value in def.$map {
+      #{utils.get-typography-var-name($variant)}: #{$value};
+    }
+  }
+  @each $type, $value in def.$map {
+    .#{def.$prefix}-#{$type} {
+      font-family: #{utils.get-font($type)};
+    }
+  }
+
+  .#{def.$prefix}-italic {
+    font-style: italic;
+  }
+
+  .#{def.$prefix}-center {
+    text-align: center;
+  }
+}
+
+body {
+  font-family: #{utils.get-font(primary)};
+}
