@@ -2,26 +2,26 @@ import type { JSX } from "solid-js/jsx-runtime";
 
 export const TagList = (): JSX.Element => {
   return (
-    <div class="pt-3">
+    <div class="stack spa-1">
       <h5>Categories</h5>
       <div class="cluster spa-2">
         <a href="#">
-          <span class="badge rounded-pill text-bg-dark">Accessibility</span>
+          <span class="tag">Accessibility</span>
         </a>
         <a href="#">
-          <span class="badge rounded-pill text-bg-dark">UX</span>
+          <span class="tag">UX</span>
         </a>
         <a href="#">
-          <span class="badge rounded-pill text-bg-dark">CSS</span>
+          <span class="tag">CSS</span>
         </a>
         <a href="#">
-          <span class="badge rounded-pill text-bg-dark">Performance</span>
+          <span class="tag">Performance</span>
         </a>
         <a href="#">
-          <span class="badge rounded-pill text-bg-dark">Design</span>
+          <span class="tag">Design</span>
         </a>
         <a href="#">
-          <span class="badge rounded-pill text-bg-dark">Wallpapers</span>
+          <span class="tag">Wallpapers</span>
         </a>
       </div>
     </div>

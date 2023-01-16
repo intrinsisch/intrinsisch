@@ -3,7 +3,7 @@ import authorsPortrait from "./floppy-ears.jpg";
 
 export const Bio = (): JSX.Element => {
   return (
-    <div>
+    <div class="stack spa-1">
       <h5>About the author</h5>
       <div class="card">
         {/* <img

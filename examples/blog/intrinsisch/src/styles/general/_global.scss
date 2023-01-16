@@ -1,6 +1,6 @@
 @use "../framework-wrapper" as f;
 
-@include f.use-layer("global") {
+@include f.use-layer(global) {
   body {
     @include f.apply-color-palette("primary-dark");
   }

@@ -14,7 +14,7 @@ export const BlogEntry = (props: Blog): JSX.Element => {
         <For each={props.tags}>
           {(tag) => (
             <a href="#">
-              <span class="badge rounded-pill text-bg-dark">{tag}</span>
+              <span class="tag">{tag}</span>
             </a>
           )}
         </For>

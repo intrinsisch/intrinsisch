@@ -1,6 +1,6 @@
 @use "sass:map";
-@use "../../utils/" as u;
 @use "typography-definitions" as def;
+@use "../../utils/" as u;
 
 @function get-typography-var-name($variant) {
   @return u.create-property(
@@ -12,4 +12,12 @@
 
 @function get-font($variant) {
   @return var(#{get-typography-var-name($variant)});
+}
+
+@function get-font-size($size) {
+  @return var(#{get-typography-var-name($size)});
+}
+
+@mixin load-typography-size($size) {
+  font-size: #{get-font-size($size)};
 }

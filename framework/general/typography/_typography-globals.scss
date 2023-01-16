@@ -7,6 +7,10 @@
     @each $variant, $value in def.$map {
       #{utils.get-typography-var-name($variant)}: #{$value};
     }
+
+    @each $tier, $factor in def.$font-sizes {
+      #{utils.get-typography-var-name($tier)}: #{$factor}em;
+    }
   }
   @each $type, $value in def.$map {
     .#{def.$prefix}-#{$type} {
