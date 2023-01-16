@@ -2,7 +2,7 @@ import type { JSX } from "solid-js/jsx-runtime";
 
 export const Footer = (): JSX.Element => {
   return (
-    <footer class="container stack">
+    <footer class="container stack spa-py-5">
       <div class="grid spa-6">
         <div class="stack spa-2">
           <h5 class="fw-bolder">Newsletter</h5>
@@ -28,20 +28,20 @@ export const Footer = (): JSX.Element => {
           <div class="stack spa-1">
             <button
               type="button"
-              class="list-group-item list-group-item-action"
+              class="typ-left"
               aria-current="true"
             >
               Log in
             </button>
             <button
               type="button"
-              class="list-group-item list-group-item-action"
+              class="typ-left"
             >
               Feed
             </button>
             <button
               type="button"
-              class="list-group-item list-group-item-action"
+              class="typ-left"
             >
               Link to external site{" "}
               <i class="fa-light fa-arrow-up-right-from-square"></i>
@@ -49,7 +49,7 @@ export const Footer = (): JSX.Element => {
           </div>
         </div>
       </div>
-      <div class="typ-center py-5">
+      <div class="typ-center spa-py-5">
         <span>&copy;</span>
         <span class="typ-italic typ-monospace">2023 Blog </span>
         <span>&#92;</span>

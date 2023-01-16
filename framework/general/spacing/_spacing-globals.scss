@@ -16,5 +16,17 @@ $_var-spacing: map.get(def.$vars, "spacing");
     .#{def.$prefix}-#{$size} {
       #{$_var-spacing}: #{utils.get-spacing($size)};
     }
+
+    .#{def.$prefix}-p-#{$size} {
+      padding: #{utils.get-spacing($size)};
+    }
+
+    .#{def.$prefix}-px-#{$size} {
+      padding-inline: #{utils.get-spacing($size)};
+    }
+
+    .#{def.$prefix}-py-#{$size} {
+      padding-block: #{utils.get-spacing($size)};
+    }
   }
 }

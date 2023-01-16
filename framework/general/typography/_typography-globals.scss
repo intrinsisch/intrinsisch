@@ -18,8 +18,16 @@
     font-style: italic;
   }
 
+  .#{def.$prefix}-left {
+    text-align: left;
+  }
+
   .#{def.$prefix}-center {
     text-align: center;
+  }
+
+  .#{def.$prefix}-right {
+    text-align: right;
   }
 }
 
