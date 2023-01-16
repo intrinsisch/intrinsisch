@@ -4,7 +4,7 @@ export const Footer = (): JSX.Element => {
   return (
     <footer class="container stack">
       <div class="row">
-        <div class="col-sm">
+        <div class="stack spa-2">
           <h5 class="fw-bolder">Newsletter</h5>
           <p>Sign up to our weekly newsletter:</p>
           <form action="#">
@@ -23,7 +23,7 @@ export const Footer = (): JSX.Element => {
             </div>
           </form>
         </div>
-        <div class="col-sm">
+        <div class="stack spa-2">
           <h5>Meta links</h5>
           <div class="list-group list-group-flush">
             <button

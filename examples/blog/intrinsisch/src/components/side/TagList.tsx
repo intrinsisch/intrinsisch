@@ -4,10 +4,7 @@ export const TagList = (): JSX.Element => {
   return (
     <div class="pt-3">
       <h5>Categories</h5>
-      <div
-        class="d-flex flex-wrap gap-1"
-        style="display: flex; flex-wrap: wrap;"
-      >
+      <div class="cluster spa-2">
         <a href="#">
           <span class="badge rounded-pill text-bg-dark">Accessibility</span>
         </a>

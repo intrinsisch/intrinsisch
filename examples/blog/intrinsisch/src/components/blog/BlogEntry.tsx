@@ -10,7 +10,7 @@ export type Blog = {
 export const BlogEntry = (props: Blog): JSX.Element => {
   return (
     <article class="py-4 stack spa-4">
-      <div class="d-flex flex-wrap gap-1 mb-2">
+      <div class="cluster spa-2">
         <For each={props.tags}>
           {(tag) => (
             <a href="#">
