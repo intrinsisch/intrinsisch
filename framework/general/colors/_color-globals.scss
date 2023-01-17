@@ -14,7 +14,7 @@ $_var-anchor-color: u.create-property("anchor", "color");
     }
   }
 
-  a {
+  a:not(.no-anchor) {
     @include utils.load-color-palette("accent");
     #{$_var-anchor-color}: utils.get-color-local("text");
     color: var(#{$_var-anchor-color});
@@ -22,5 +22,9 @@ $_var-anchor-color: u.create-property("anchor", "color");
     &:is([aria-current], :hover, :active, :focus) {
       #{$_var-anchor-color}: utils.get-color-local("text-hover");
     }
+  }
+
+  .no-anchor {
+    text-decoration: none;
   }
 }

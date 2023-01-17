@@ -4,8 +4,8 @@ export const Navbar = (): JSX.Element => {
   const [collapsed, setCollapsed] = createSignal(true);
 
   return (
-    <nav class="container cluster">
-      <a class="navbar-brand fw-bold font-monospace text-uppercase" href="#">
+    <nav class="container cluster spa-0 navbar">
+      <a class="navbar-brand no-anchor spa-py-3" href="#">
         Intrinsisch&#92;Blog
       </a>
       <button
@@ -17,17 +17,20 @@ export const Navbar = (): JSX.Element => {
           setCollapsed((c) => !c);
         }}
       >
-        <span class="navbar-toggler-icon"></span>
+        <i class="fa-solid fa-bars"></i>
       </button>
-      <div class={`collapse navbar-collapse ${collapsed() || "show"}`}>
+      <div class={`navbar-collapse ${collapsed() || "show"}`}>
         <ul class="cluster unlist">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
-              Home
+          <li>
+            <a
+              class="navbar-link no-anchor active"
+              aria-current="page"
+              href="#"
+            >Home
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
+          <li>
+            <a class="navbar-link no-anchor" href="#">
               About me
             </a>
           </li>
