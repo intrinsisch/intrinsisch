@@ -1,4 +1,4 @@
-import { For, JSX } from "solid-js";
+import { For, JSX, Show } from "solid-js";
 
 export type Blog = {
   title: string;
@@ -10,15 +10,17 @@ export type Blog = {
 export const BlogEntry = (props: Blog): JSX.Element => {
   return (
     <article class="py-4">
-      <div class="d-flex flex-wrap gap-1 mb-2">
-        <For each={props.tags}>
-          {(tag) => (
-            <a href="#">
-              <span class="badge rounded-pill text-bg-dark">{tag}</span>
-            </a>
-          )}
-        </For>
-      </div>
+      <Show when={props.tags.length > 0}>
+        <div class="d-flex flex-wrap gap-1 mb-2">
+          <For each={props.tags}>
+            {(tag) => (
+              <a href="#">
+                <span class="badge rounded-pill text-bg-dark">{tag}</span>
+              </a>
+            )}
+          </For>
+        </div>
+      </Show>
       <h2>
         <a href="#">{props.title}</a>
       </h2>

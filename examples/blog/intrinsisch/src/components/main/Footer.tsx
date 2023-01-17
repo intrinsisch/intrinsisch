@@ -8,16 +8,15 @@ export const Footer = (): JSX.Element => {
           <h5 class="fw-bolder">Newsletter</h5>
           <p>Sign up to our weekly newsletter:</p>
           <form action="#">
-            <div class="input-group mb-3">
+            <div class="sidebar-wrapper spa-0">
               <input
                 type="text"
-                class="form-control"
                 placeholder="your@email.com"
                 aria-label="Your email address"
                 aria-describedby="button-addon"
                 required
               />
-              <button class="btn btn-dark" type="submit" id="button-addon">
+              <button class="sidebar" type="submit" id="button-addon">
                 Subscribe
               </button>
             </div>

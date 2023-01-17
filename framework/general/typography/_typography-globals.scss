@@ -33,6 +33,11 @@
   .#{def.$prefix}-right {
     text-align: right;
   }
+
+  .#{def.$prefix}-lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+  }
 }
 
 body {

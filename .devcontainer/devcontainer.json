@@ -1,5 +1,5 @@
 {
-  "name": "Bootstrap: Blog",
+  "name": "Intrinsisch",
   "build": {
     "dockerfile": "./Dockerfile"
   },
