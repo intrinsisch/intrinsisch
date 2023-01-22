@@ -1,4 +1,4 @@
-import type { JSX } from "solid-js/jsx-runtime";
+import type { JSX } from "solid-js";
 import { Ad } from "./Ad";
 import { Bio } from "./Bio";
 import { TagList } from "./TagList";

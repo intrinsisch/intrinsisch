@@ -1,4 +1,4 @@
-import type { JSX } from "solid-js/jsx-runtime";
+import type { JSX } from "solid-js";
 import AdImage from "./ad.png";
 
 export const Ad = (): JSX.Element => {

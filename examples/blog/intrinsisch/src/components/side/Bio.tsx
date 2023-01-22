@@ -1,4 +1,4 @@
-import type { JSX } from "solid-js/jsx-runtime";
+import type { JSX } from "solid-js";
 import authorsPortrait from "./floppy-ears.jpg";
 
 export const Bio = (): JSX.Element => {

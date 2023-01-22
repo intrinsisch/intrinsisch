@@ -1,4 +1,4 @@
-import type { JSX } from "solid-js/jsx-runtime";
+import type { JSX } from "solid-js";
 import { BlogList } from "@components/blog/BlogList";
 import { Sidebar } from "@components/side/Sidebar";
 
