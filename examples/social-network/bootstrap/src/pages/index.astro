@@ -1,4 +1,7 @@
 ---
+import { Main } from "@components/main/Main";
+import { FixedSidebar } from "@components/side/FixedSidebar";
+import { Footer } from "@components/side/Footer";
 import "@styles/main.scss";
 ---
 
@@ -12,5 +15,18 @@ import "@styles/main.scss";
     ></script>
     <title>Bootstrap: Social Network</title>
   </head>
-  <body> </body>
+  <body>
+    <div class="row g-0">
+      <div class="col-auto bg-dark text-light">
+        <FixedSidebar />
+      </div>
+      <div class="col">
+        <Main />
+        <div class="d-sm-none py-3 px-4">
+          <hr />
+          <Footer darkBg={false} />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
