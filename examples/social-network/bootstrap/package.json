@@ -1,0 +1,20 @@
+{
+  "name": "@example/minimal",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/solid-js": "^1.2.3",
+    "astro": "^1.7.2",
+    "bootstrap": "^5.2.3",
+    "sass": "^1.57.0",
+    "solid-js": "^1.6.5"
+  }
+}
