@@ -1,8 +1,8 @@
-# bootstrap-blog
+# bootstrap-social-media
 
-Automatically deployed by Netlify to [https://bs.blog.intrinsisch.lvl8.io/](https://bs.blog.intrinsisch.lvl8.io/)
+Automatically deployed by Netlify to [https://bs.social-media.intrinsisch.lvl8.io/](https://bs.social-media.intrinsisch.lvl8.io/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2b05ccf6-f07c-440a-ac6c-3b1d5e54cde0/deploy-status)](https://app.netlify.com/sites/dulcet-cactus-99b703/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4a9aa32f-c6b7-4505-b2db-68271b908d9a/deploy-status)](https://app.netlify.com/sites/astounding-sorbet-8a6ece/deploys)
 
 ## Prerequisites
 
