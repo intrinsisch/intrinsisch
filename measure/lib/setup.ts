@@ -2,7 +2,7 @@ import { ensureDir, move } from "https://deno.land/std@0.175.0/fs/mod.ts";
 import { Project } from "./config.ts";
 import { log } from "./utils.ts";
 
-export async function setup(p: Project) {
+export async function setup(p: Project): Promise<undefined> {
   log(`Project: ${p.label}`);
   const relPath = ["../examples", p.path].join("/");
 
@@ -14,5 +14,5 @@ export async function setup(p: Project) {
 
   log(`Move: ${p.label}`);
   await ensureDir("./tmp");
-  await move([relPath, "dist"].join("/"), ["./tmp", p.short].join("/"));
+  return move([relPath, "dist"].join("/"), ["./tmp", p.short].join("/"));
 }
