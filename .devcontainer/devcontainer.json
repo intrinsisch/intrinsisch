@@ -16,6 +16,7 @@
 	"formulahendry.auto-rename-tag",
 	"dbaeumer.vscode-eslint",
 	"esbenp.prettier-vscode",
-	"astro-build.astro-vscode"
+	"astro-build.astro-vscode",
+	"denoland.vscode-deno"
 ]
 }
