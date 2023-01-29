@@ -1,4 +1,0 @@
-@use "layer-defintions" as def;
-@use "layer-utils" as utils;
-
-@include utils.init-framework-layers(def.$list);

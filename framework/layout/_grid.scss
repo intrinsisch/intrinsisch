@@ -3,10 +3,8 @@
 
 $_var-spacing: map.get(g.$spacing-vars, "spacing");
 
-@include g.use-framework-layer(layout) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
-    gap: var(#{$_var-spacing}, #{g.get-spacing(2)});
-  }
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(400px, 100%), 1fr));
+  gap: var(#{$_var-spacing}, #{g.get-spacing(2)});
 }

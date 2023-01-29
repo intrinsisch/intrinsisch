@@ -1,43 +1,40 @@
 @use "typography-definitions" as def;
 @use "typography-utils" as utils;
-@use "../layers/" as lay;
 
-@include lay.use-framework-layer(globals) {
-  :root {
-    @each $variant, $value in def.$map {
-      #{utils.get-typography-var-name($variant)}: #{$value};
-    }
-
-    @each $tier, $factor in def.$font-sizes {
-      #{utils.get-typography-var-name($tier)}: #{$factor}em;
-    }
-  }
-  @each $type, $value in def.$map {
-    .#{def.$prefix}-#{$type} {
-      font-family: #{utils.get-font($type)};
-    }
+:root {
+  @each $variant, $value in def.$map {
+    #{utils.get-typography-var-name($variant)}: #{$value};
   }
 
-  .#{def.$prefix}-italic {
-    font-style: italic;
+  @each $tier, $factor in def.$font-sizes {
+    #{utils.get-typography-var-name($tier)}: #{$factor}em;
   }
+}
+@each $type, $value in def.$map {
+  .#{def.$prefix}-#{$type} {
+    font-family: #{utils.get-font($type)};
+  }
+}
 
-  .#{def.$prefix}-left {
-    text-align: left;
-  }
+.#{def.$prefix}-italic {
+  font-style: italic;
+}
 
-  .#{def.$prefix}-center {
-    text-align: center;
-  }
+.#{def.$prefix}-left {
+  text-align: left;
+}
 
-  .#{def.$prefix}-right {
-    text-align: right;
-  }
+.#{def.$prefix}-center {
+  text-align: center;
+}
 
-  .#{def.$prefix}-lead {
-    font-size: 1.25rem;
-    font-weight: 300;
-  }
+.#{def.$prefix}-right {
+  text-align: right;
+}
+
+.#{def.$prefix}-lead {
+  font-size: 1.25rem;
+  font-weight: 300;
 }
 
 body {

@@ -1,7 +1,5 @@
 @use "../general/" as g;
 
-@include g.use-framework-layer(components) {
-  input {
-    padding: g.get-spacing(1) g.get-spacing(4);
-  }
+input {
+  padding: g.get-spacing(1) g.get-spacing(4);
 }

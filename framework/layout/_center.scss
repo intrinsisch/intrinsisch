@@ -1,8 +1,4 @@
-@use "../general/" as g;
-
-@include g.use-framework-layer(layout) {
-  .center {
-    margin-inline: auto;
-    width: fit-content;
-  }
+.center {
+  margin-inline: auto;
+  width: fit-content;
 }

@@ -1,11 +1,9 @@
 @use "../framework-wrapper" as f;
 
-@include f.use-layer(global) {
-  body {
-    @include f.apply-color-palette("primary-dark");
-    @include f.load-color-palette("primary-dark");
-  }
-  main {
-    @include f.apply-color-palette("neutral");
-  }
+body {
+  @include f.apply-color-palette("primary-dark");
+  @include f.load-color-palette("primary-dark");
+}
+main {
+  @include f.apply-color-palette("neutral");
 }
