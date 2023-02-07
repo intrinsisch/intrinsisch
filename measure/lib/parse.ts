@@ -5,7 +5,9 @@ import {
 } from "https://deno.land/x/deno_dom@v0.1.36-alpha/deno-dom-wasm.ts";
 import { Project } from "./config.ts";
 
-export async function parseProject(p: Project): Promise<{ html: HTMLDocument, css: AST, p: Project } | undefined> {
+export type AfterParsed = { html: HTMLDocument, css: AST, p: Project }
+
+export async function parseProject(p: Project): Promise<AfterParsed | undefined> {
   const htmlPromise = parseHTML(p);
   const cssPromise = parseCSS(p);
 
