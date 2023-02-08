@@ -9,8 +9,7 @@ await cleanup();
 await Promise.all(projects.map(setup));
 const documents = await Promise.all(projects.map(parseProject));
 documents.filter((d): d is AfterParsed => d !== undefined).forEach(document => {
-  // const u = universality(document.css);
-  // console.log({ u });
-  averageSelectorScope(document.html, document.css);
-
+  const u = universality(document.css);
+  const s = averageSelectorScope(document.html, document.css);
+  console.log({ u, s });
 })

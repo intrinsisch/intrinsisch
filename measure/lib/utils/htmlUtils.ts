@@ -1,7 +1,9 @@
 import { Element, HTMLDocument } from "https://deno.land/x/deno_dom@v0.1.36-alpha/deno-dom-wasm.ts";
+import { sum } from "./listUtils.ts";
 
 export type CustomElement = {
     name: string;
+    element: Element;
     classList: string[];
     children: CustomElement[];
 }
@@ -10,6 +12,7 @@ export function getCleanElements(html: HTMLDocument): CustomElement {
     const body = html.body;
     return {
         name: "body",
+        element: body,
         classList: getClassList(body),
         children: [...body.children].map(toCleanElement)
     }
@@ -18,6 +21,7 @@ export function getCleanElements(html: HTMLDocument): CustomElement {
 function toCleanElement(el: Element): CustomElement {
     return {
         name: el.localName,
+        element: el,
         classList: getClassList(el),
         children: [...el.children].map(toCleanElement)
     }
@@ -29,8 +33,4 @@ export function getNumberOfElements(element: CustomElement): number {
 
 function getClassList(el: Element): string[] {
     return [...el.classList];
-}
-
-function sum(acc: number, curr: number): number {
-    return (acc + curr);
 }

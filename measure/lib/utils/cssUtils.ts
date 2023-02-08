@@ -69,7 +69,7 @@ function splitSelector(selector: string): string[] {
   return selector.split(" ").flatMap(s => s.split(">")).filter(s => s.length > 0);
 }
 
-type CombinatorSelector = {
+export type CombinatorSelector = {
   stringRepresentation: string;
   next?: {
     directChild: boolean;
