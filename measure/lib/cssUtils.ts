@@ -1,7 +1,7 @@
 import { AST, Rule } from "https://deno.land/x/css@0.3.0/mod.ts";
 import { reverseStr } from "./stringUtil.ts";
 
-type CustomSelectorWrapper = {
+export type CustomSelectorWrapper = {
   stringRepresentation: string;
   listRepresentation: string[];
   combinatorRepresentation: CombinatorSelector;
@@ -19,7 +19,6 @@ export function getCleanSelectors(css: AST): CustomSelectorWrapper[] {
  * To handle media queries and nested rules.
  * Also filters out all non-rule entries, as e.g. 'charset'.
  */
-
 function flatRules(rule: Rule): Rule[] {
   if ("rules" in rule) {
     return (rule.rules as Rule[]).flatMap(flatRules);
@@ -29,6 +28,7 @@ function flatRules(rule: Rule): Rule[] {
   }
   return [rule];
 }
+
 /**
  * fix
  * from: `[ "button:is([aria-current]", ":hover", ":active", ":focus)" ]`
@@ -54,7 +54,11 @@ function accountForIsSelector(selectors: string[]): string[] {
 }
 
 function prepareSelector(selector: string): CustomSelectorWrapper {
-  return { stringRepresentation: selector, listRepresentation: splitSelector(selector), combinatorRepresentation: createCombinatorRepresentation(selector) }
+  return {
+    stringRepresentation: selector,
+    listRepresentation: splitSelector(selector),
+    combinatorRepresentation: createCombinatorRepresentation(selector)
+  }
 }
 
 /**
