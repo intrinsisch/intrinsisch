@@ -1,5 +1,5 @@
 import { AST } from "https://deno.land/x/css@0.3.0/mod.ts";
-import { CustomSelectorWrapper, getCleanSelectors } from "./cssUtils.ts";
+import { CustomSelectorWrapper, getCleanSelectors } from "./utils/cssUtils.ts";
 
 /**
  * Calculates "Universality" factor as proposed from
