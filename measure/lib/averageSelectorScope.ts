@@ -4,7 +4,7 @@ import { CombinatorSelector, getCleanSelectors } from "./utils/cssUtils.ts";
 import { CustomElement, getCleanElements, getNumberOfElements } from "./utils/htmlUtils.ts";
 import { sum } from "./utils/listUtils.ts";
 /**
- * Calculates "Average Selector Scope" factor as proposed from
+ * Calculates "Average Selector Scope" factor as proposed in
  * CSS Code Quality: A Metric for Abstractness
  * Keller and Nussbaumer, 2010
  */

@@ -2,7 +2,7 @@ import { AST } from "https://deno.land/x/css@0.3.0/mod.ts";
 import { CustomSelectorWrapper, getCleanSelectors } from "./utils/cssUtils.ts";
 
 /**
- * Calculates "Universality" factor as proposed from
+ * Calculates "Universality" factor as proposed in
  * CSS Code Quality: A Metric for Abstractness
  * Keller and Nussbaumer, 2010
  */
