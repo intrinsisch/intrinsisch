@@ -7,7 +7,7 @@ export const Main = (): JSX.Element => {
     <main class="container lg spa-py-5">
       <div class="sidebar-wrapper spa-6">
         <BlogList />
-        <div class="sidebar" style="--sidebar-basis: 5rem;">
+        <div class="sidebar" style="--sbr--basis: 25rem;">
           <Sidebar />
         </div>
       </div>
