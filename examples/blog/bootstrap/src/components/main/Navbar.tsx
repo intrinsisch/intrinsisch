@@ -1,8 +1,6 @@
-import { createSignal, JSX } from "solid-js";
+import type { JSX } from "solid-js";
 
 export const Navbar = (): JSX.Element => {
-  const [collapsed, setCollapsed] = createSignal(true);
-
   return (
     <nav class="navbar navbar-expand-lg sticky-top bg-warning">
       <div class="container-fluid">
@@ -12,15 +10,12 @@ export const Navbar = (): JSX.Element => {
         <button
           class="navbar-toggler"
           type="button"
-          aria-expanded={collapsed() ? "false" : "true"}
+          aria-expanded="false"
           aria-label="Toggle navigation"
-          onClick={() => {
-            setCollapsed((c) => !c);
-          }}
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class={`collapse navbar-collapse ${collapsed() || "show"}`}>
+        <div class={`collapse navbar-collapse`}>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">

@@ -1,7 +1,6 @@
-import { createSignal, JSX } from "solid-js";
+import type { JSX } from "solid-js";
 
 export const Navbar = (): JSX.Element => {
-  const [collapsed, setCollapsed] = createSignal(true);
 
   return (
     <nav class="container cluster spa-0 navbar">
@@ -11,15 +10,12 @@ export const Navbar = (): JSX.Element => {
       <button
         class="navbar-toggler"
         type="button"
-        aria-expanded={collapsed() ? "false" : "true"}
+        aria-expanded="false"
         aria-label="Toggle navigation"
-        onClick={() => {
-          setCollapsed((c) => !c);
-        }}
       >
         <i class="fa-solid fa-bars"></i>
       </button>
-      <div class={`navbar-collapse ${collapsed() || "show"}`}>
+      <div class={`navbar-collapse`}>
         <ul class="cluster unlist">
           <li>
             <a
