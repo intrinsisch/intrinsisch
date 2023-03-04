@@ -1,8 +1,8 @@
-import { For, JSX } from "solid-js";
+import { For, JSXElement } from "solid-js";
 import { Feedcard } from "./Feedcard";
 import { feedlist } from "./Feedlist";
 
-export const Feed = (): JSX.Element => {
+export const Feed = (): JSXElement => {
   return (
     <div class="d-flex flex-column gap-3 mt-5">
       <For each={feedlist}>

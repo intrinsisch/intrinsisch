@@ -1,6 +1,6 @@
-import type { JSX } from "solid-js";
+import type { JSXElement} from "solid-js";
 
-export const Footer = (): JSX.Element => {
+export const Footer = (): JSXElement => {
   return (
     <footer class="container-fluid pt-4">
       <div class="row">

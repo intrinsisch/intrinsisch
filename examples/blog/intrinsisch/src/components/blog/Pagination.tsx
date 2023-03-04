@@ -1,6 +1,6 @@
-import type { JSX } from "solid-js";
+import type { JSXElement} from "solid-js";
 
-export const Pagination = (): JSX.Element => {
+export const Pagination = (): JSXElement => {
   return (
     <nav class="pagination" aria-label="Page navigation example">
       <ul class="cluster unlist center" style="--spa--spacing:0;">

@@ -1,9 +1,9 @@
-import { For, JSX } from "solid-js";
+import { For, JSXElement } from "solid-js";
 import { blogEntries } from "./BlogData";
 import { BlogEntry } from "./BlogEntry";
 import { Pagination } from "./Pagination";
 
-export const BlogList = (): JSX.Element => {
+export const BlogList = (): JSXElement => {
   return (
     <>
       <h1>Latest posts</h1>

@@ -1,6 +1,6 @@
-import type { JSX } from "solid-js";
+import type { JSXElement} from "solid-js";
 
-export const Navbar = (): JSX.Element => {
+export const Navbar = (): JSXElement => {
 
   return (
     <nav class="container cluster spa-0 navbar">

@@ -1,10 +1,11 @@
-import { JSX, Show } from "solid-js";
+import { For, JSXElement, Show } from "solid-js";
+import { Commentcard } from "./Commentcard";
 import type { FeedEntry } from "./Feedlist";
 
 export const Feedcard = (props: {
   entry: FeedEntry;
   index: number;
-}): JSX.Element => {
+}): JSXElement => {
   return (
     <div class="card">
       <div class="card-header d-flex align-items-center gap-3">
@@ -27,6 +28,21 @@ export const Feedcard = (props: {
       </Show>
       <div class="card-body">
         <p class="card-text">{props.entry.content}</p>
+        <hr />
+        <form>
+          <div class="input-group mb-3">
+            <div class="form-floating">
+              <input type="text" class="form-control" id="floatingInput" placeholder="Comment..." />
+              <label for="floatingInput">Comment</label>
+            </div>
+            <button class="btn btn-outline-primary" type="button" id="button-addon2"><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </form>
+        <For each={props.entry.comments}>
+          {(comment) => (
+            <Commentcard />
+          )}
+        </For>
       </div>
       <div class="card-footer d-flex gap-3">
         <span>

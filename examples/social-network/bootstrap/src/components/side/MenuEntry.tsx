@@ -1,9 +1,9 @@
-import type { JSX } from "solid-js";
+import type { JSXElement} from "solid-js";
 
 export const MenuEntry = (props: {
   icon: string;
   label: string;
-}): JSX.Element => {
+}): JSXElement => {
   return (
     <h4 class="mt-4">
       <a href="#" class="fw-bold text-light text-decoration-none">

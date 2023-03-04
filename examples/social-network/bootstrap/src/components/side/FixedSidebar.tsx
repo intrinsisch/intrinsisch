@@ -1,8 +1,8 @@
-import type { JSX } from "solid-js";
+import type { JSXElement} from "solid-js";
 import { Footer } from "./Footer";
 import { MenuEntry } from "./MenuEntry";
 
-export const FixedSidebar = (): JSX.Element => {
+export const FixedSidebar = (): JSXElement => {
   return (
     <div
       class="position-sticky top-0 bottom-0 p-4 d-flex flex-column"

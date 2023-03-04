@@ -1,4 +1,4 @@
-import { For, JSX, Show } from "solid-js";
+import { For, JSXElementElement, Show } from "solid-js";
 
 export type Blog = {
   title: string;
@@ -7,7 +7,7 @@ export type Blog = {
   tags: string[];
 };
 
-export const BlogEntry = (props: Blog): JSX.Element => {
+export const BlogEntry = (props: Blog): JSXElement => {
   return (
     <article class="py-4">
       <Show when={props.tags.length > 0}>

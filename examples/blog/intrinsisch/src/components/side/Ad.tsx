@@ -1,7 +1,7 @@
-import type { JSX } from "solid-js";
+import type { JSXElement} from "solid-js";
 import AdImage from "./ad.png";
 
-export const Ad = (): JSX.Element => {
+export const Ad = (): JSXElement => {
   return (
     <div class="stack spa-1">
       <h5>Ad</h5>

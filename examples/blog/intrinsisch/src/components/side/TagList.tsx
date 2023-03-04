@@ -1,6 +1,6 @@
-import type { JSX } from "solid-js";
+import type { JSXElement} from "solid-js";
 
-export const TagList = (): JSX.Element => {
+export const TagList = (): JSXElement => {
   return (
     <div class="stack spa-1">
       <h5>Categories</h5>

@@ -1,4 +1,4 @@
-import { For, JSX } from "solid-js";
+import { For, JSXElement } from "solid-js";
 import portrait03 from "./images/portrait-03.jpg";
 import portrait04 from "./images/portrait-04.jpg";
 import portrait05 from "./images/portrait-05.jpg";
@@ -17,7 +17,7 @@ const stories: Story[] = [
   { name: "Kian", portrait: portrait06, borderColor: "danger" },
 ];
 
-export const Stories = (): JSX.Element => {
+export const Stories = (): JSXElement => {
   return (
     <div class="row gap-0">
       <For each={stories}>{(story) => (

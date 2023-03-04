@@ -1,6 +1,6 @@
-import type { JSX } from "solid-js";
+import type { JSXElement} from "solid-js";
 
-export const Footer = (props: { darkBg: boolean }): JSX.Element => {
+export const Footer = (props: { darkBg: boolean }): JSXElement => {
   return (
     <div>
       <small>

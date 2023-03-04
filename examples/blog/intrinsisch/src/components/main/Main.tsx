@@ -1,8 +1,8 @@
-import type { JSX } from "solid-js";
+import type { JSXElement} from "solid-js";
 import { BlogList } from "@components/blog/BlogList";
 import { Sidebar } from "@components/side/Sidebar";
 
-export const Main = (): JSX.Element => {
+export const Main = (): JSXElement => {
   return (
     <main class="container lg spa-py-5">
       <div class="sidebar-wrapper spa-6">

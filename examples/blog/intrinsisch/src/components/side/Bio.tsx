@@ -1,7 +1,7 @@
-import type { JSX } from "solid-js";
+import type { JSXElement} from "solid-js";
 import authorsPortrait from "./floppy-ears.jpg";
 
-export const Bio = (): JSX.Element => {
+export const Bio = (): JSXElement => {
   return (
     <div class="stack spa-1">
       <h5>About the author</h5>
