@@ -1,4 +1,4 @@
-import type { JSX } from "solid-js";
+import { JSX, Show } from "solid-js";
 import type { FeedEntry } from "./Feedlist";
 
 export const Feedcard = (props: {
@@ -22,9 +22,9 @@ export const Feedcard = (props: {
           </p>
         </div>
       </div>
-      {props.entry.image && (
-        <img src={props.entry.image} class="card-img-top" alt="..." />
-      )}
+      <Show when={props.entry.image} keyed>
+        {(image) => <img src={image} class="card-img-top" alt="..." />}
+      </Show>
       <div class="card-body">
         <p class="card-text">{props.entry.content}</p>
       </div>
