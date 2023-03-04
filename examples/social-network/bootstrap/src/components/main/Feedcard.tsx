@@ -11,7 +11,7 @@ export const Feedcard = (props: {
         <img
           width="48"
           height="48"
-          src={`https://source.unsplash.com/48x48/?portrait&${props.index}`}
+          src={props.entry.portrait}
           class="rounded-circle border border-primary"
           alt={props.entry.author}
         />
