@@ -40,7 +40,7 @@ export const Feedcard = (props: {
         </form>
         <For each={props.entry.comments}>
           {(comment) => (
-            <Commentcard />
+            <Commentcard comment={comment} />
           )}
         </For>
       </div>

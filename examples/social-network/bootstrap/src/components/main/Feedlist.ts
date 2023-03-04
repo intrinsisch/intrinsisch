@@ -2,7 +2,7 @@ import technology from "./images/technology.jpg";
 import portrait01 from "./images/portrait-01.jpg";
 import portrait02 from "./images/portrait-02.jpg";
 
-type Comment = {
+export type Comment = {
   author: string;
   content: string;
   replies?: Comment[];
@@ -31,5 +31,20 @@ export const feedlist: FeedEntry[] = [{
   portrait: portrait02,
   date: "Yesterday",
   content: "These are native browser features that were widely used in the past, but now, even though every browser has native UI elements for them, it seems that developers have started to adopt custom solutions.",
-  image: technology
+  image: technology,
+  comments: [{
+    author: "Junior Hilton",
+    content: "You're letting semantics rule your thinking. And no drawing is ever going to be 100% detailed anyway - especially one drawn from fantasy. No charge for the pun.",
+    replies: [{
+      author: "Kyle Repalda",
+      content: "thank you, was just about to say",
+    }, {
+      author: "Kabby Dochev",
+      content: "This would look great on a tea towel"
+    }]
+  },
+  {
+    author: "Kyle Repalda",
+    content: "I love Gundabad",
+  }]
 }];

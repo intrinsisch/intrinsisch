@@ -1,11 +1,16 @@
-import type { JSXElement } from "solid-js";
+import { For, JSXElement } from "solid-js";
+import type { Comment } from "./Feedlist";
 
-export const Commentcard = (): JSXElement => {
+type Props = {
+  comment: Comment;
+}
+
+export const Commentcard = (props: Props): JSXElement => {
   return <div class="card border-light mb-3">
-    <div class="card-header">Header</div>
+    <div class="card-header">{props.comment.author}</div>
     <div class="card-body">
-      <h5 class="card-title">Light card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <p class="card-text">{props.comment.content}</p>
+      <For each={props.comment.replies}>{(reply) => <Commentcard comment={reply} />}</For>
     </div>
   </div>
 
