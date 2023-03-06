@@ -17,12 +17,18 @@ import "@styles/main.scss";
   </head>
   <body class="text-bg-dark">
     <div class="row g-0">
-      <div class="col-auto bg-black text-light">
+      <input type="checkbox" class="d-none" id="sidebar-switcher" />
+      <div class="col-auto bg-black text-light sidebar">
         <FixedSidebar />
+      </div>
+      <div class="col-auto">
+        <label class="p-3 position-sticky top-0 sidebar-toggler" for="sidebar-switcher">
+          <i class="fa-solid fa-arrows-left-right"></i>
+        </label>
       </div>
       <div class="col">
         <Main />
-        <div class="d-sm-none py-3 px-4">
+        <div class="d-sm-none py-3 pe-4">
           <hr />
           <Footer darkBg={false} />
         </div>
