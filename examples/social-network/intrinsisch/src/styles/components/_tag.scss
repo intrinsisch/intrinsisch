@@ -1,0 +1,18 @@
+@use "../framework-wrapper" as f;
+
+$_var-color: f.create-property("btn", "color");
+$_var-background-color: f.create-property("btn", "background-color");
+$_var-border-color: f.create-property("btn", "border-color");
+.tag {
+  @include f.load-typography-size("-1");
+  @include f.load-color-palette("neutral-dark");
+  #{$_var-color}: f.get-color-local("text");
+  #{$_var-background-color}: f.get-color-local("component");
+  #{$_var-border-color}: f.get-color-local("border");
+  color: var(#{$_var-color});
+  background-color: var(#{$_var-background-color});
+  border: 1px solid var(#{$_var-border-color});
+  padding: f.get-spacing(1) f.get-spacing(2);
+  border-radius: 25rem;
+  font-weight: bold;
+}

@@ -1,0 +1,38 @@
+---
+import { Main } from "@components/main/Main";
+import { FixedSidebar } from "@components/side/FixedSidebar";
+import { Footer } from "@components/side/Footer";
+import "@styles/main.scss";
+---
+
+<html lang="de" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script
+      src="https://kit.fontawesome.com/7ebf61cb61.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Intrinsisch: Social Network</title>
+  </head>
+  <body class="text-bg-dark">
+    <div class="row g-0">
+      <input type="checkbox" class="d-none" id="sidebar-switcher" />
+      <div class="col-auto bg-black text-light sidebar">
+        <FixedSidebar />
+      </div>
+      <div class="col-auto">
+        <label class="p-3 position-sticky top-0 sidebar-toggler" for="sidebar-switcher">
+          <i class="fa-solid fa-arrows-left-right"></i>
+        </label>
+      </div>
+      <div class="col">
+        <Main />
+        <div class="d-sm-none py-3 pe-4">
+          <hr />
+          <Footer darkBg={false} />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
