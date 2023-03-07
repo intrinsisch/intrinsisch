@@ -1,0 +1,55 @@
+.navbar {
+  justify-content: space-between;
+  @media screen and (min-width: 992px) {
+    justify-content: flex-start;
+    --spa--spacing: var(--i-spa--5);
+  }
+
+  &-brand {
+    font-family: var(--i-typ--monospace);
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--clr--text);
+    font-size: var(--i-typ--1);
+  }
+
+  &-link {
+    color: var(--clr--text);
+    &.active {
+      color: var(--clr--text-hover);
+    }
+    &:hover {
+      color: var(--clr--border);
+    }
+  }
+
+  &-toggler {
+    background-color: var(--clr--text-hover);
+    border: var(--clr--text-hover);
+    color: var(--clr--component);
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+  }
+
+  &-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    > * {
+      display: grid;
+      gap: 1rem;
+      @media screen and (min-width: 992px) {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+    &:not(.show) {
+      display: none;
+    }
+    @media screen and (min-width: 992px) {
+      display: block !important;
+      flex-basis: unset;
+      flex-grow: unset;
+    }
+  }
+}

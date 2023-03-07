@@ -9,13 +9,13 @@ export type Blog = {
 
 export const BlogEntry = (props: Blog): JSXElement => {
   return (
-    <article class="py-4">
+    <article class="stack gap-0">
       <Show when={props.tags.length > 0}>
-        <div class="d-flex flex-wrap gap-1 mb-2">
+        <div class="cluster gap-000">
           <For each={props.tags}>
             {(tag) => (
-              <a href="#">
-                <span class="badge rounded-pill text-bg-dark">{tag}</span>
+              <a href="#" class="no-decoration tag">
+                <span>{tag}</span>
               </a>
             )}
           </For>
@@ -24,10 +24,12 @@ export const BlogEntry = (props: Blog): JSXElement => {
       <h2>
         <a href="#">{props.title}</a>
       </h2>
-      <p class="lead">{props.summary}</p>
-      <button class="btn btn-sm btn-light">
-        Read more <i class="fa-light fa-arrow-right"></i>
-      </button>
+      <p>{props.summary}</p>
+      <div>
+        <button role="button" class="pointer">
+          Read more <i class="fa-light fa-arrow-right"></i>
+        </button>
+      </div>
     </article>
   );
 };

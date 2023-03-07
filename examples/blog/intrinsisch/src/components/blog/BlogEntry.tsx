@@ -1,4 +1,4 @@
-import { For, JSXElementElement, Show } from "solid-js";
+import { For, JSXElement, Show } from "solid-js";
 
 export type Blog = {
   title: string;
