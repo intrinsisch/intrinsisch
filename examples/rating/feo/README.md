@@ -1,8 +1,8 @@
-# intrinsisch-blog
+# Feo: Rating Component
 
-Automatically deployed by Netlify to [https://blog.intrinsisch.lvl8.io/](https://blog.intrinsisch.lvl8.io/)
+Automatically deployed by Netlify to [http://feo.rating.component.ffhs.lvl8.io/](http://feo.rating.component.ffhs.lvl8.io/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/88d86080-801f-4fc0-89bb-ade22944e629/deploy-status)](https://app.netlify.com/sites/candid-pegasus-bbf558/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/18f58a2c-588d-41b3-bf15-7e5ad6a161cc/deploy-status)](https://app.netlify.com/sites/thunderous-mooncake-093d64/deploys)
 
 ## Prerequisites
 

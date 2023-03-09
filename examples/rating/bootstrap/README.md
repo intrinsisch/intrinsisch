@@ -1,8 +1,8 @@
-# bootstrap-blog
+# Bootstrap: Rating Component
 
-Automatically deployed by Netlify to [https://bs.blog.intrinsisch.lvl8.io/](https://bs.blog.intrinsisch.lvl8.io/)
+Automatically deployed by Netlify to [http://bs.rating.component.ffhs.lvl8.io/](http://bs.rating.component.ffhs.lvl8.io/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2b05ccf6-f07c-440a-ac6c-3b1d5e54cde0/deploy-status)](https://app.netlify.com/sites/dulcet-cactus-99b703/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/56651c64-814b-4549-bfa0-6e82e1276ca1/deploy-status)](https://app.netlify.com/sites/capable-cajeta-e48234/deploys)
 
 ## Prerequisites
 

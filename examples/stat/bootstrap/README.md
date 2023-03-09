@@ -1,8 +1,8 @@
-# bootstrap-blog
+# Bootstrap: Stat Component
 
-Automatically deployed by Netlify to [https://bs.blog.intrinsisch.lvl8.io/](https://bs.blog.intrinsisch.lvl8.io/)
+Automatically deployed by Netlify to [http://bs.stat.component.ffhs.lvl8.io/](http://bs.stat.component.ffhs.lvl8.io/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/2b05ccf6-f07c-440a-ac6c-3b1d5e54cde0/deploy-status)](https://app.netlify.com/sites/dulcet-cactus-99b703/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/635fe586-775b-4c21-8381-cd1f2c7fd9bf/deploy-status)](https://app.netlify.com/sites/timely-malasada-c3268b/deploys)
 
 ## Prerequisites
 

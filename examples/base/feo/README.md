@@ -1,8 +1,8 @@
-# intrinsisch-blog
+# Feo: Base
 
-Automatically deployed by Netlify to [https://blog.intrinsisch.lvl8.io/](https://blog.intrinsisch.lvl8.io/)
+Automatically deployed by Netlify to [https://feo.base.ffhs.lvl8.io/](https://feo.base.ffhs.lvl8.io/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/88d86080-801f-4fc0-89bb-ade22944e629/deploy-status)](https://app.netlify.com/sites/candid-pegasus-bbf558/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d19069b8-3a32-460b-a06e-33a8f25ca7a9/deploy-status)](https://app.netlify.com/sites/coruscating-profiterole-310e0f/deploys)
 
 ## Prerequisites
 

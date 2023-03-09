@@ -1,8 +1,8 @@
-# intrinsisch-blog
+# Feo: Stat Component
 
-Automatically deployed by Netlify to [https://blog.intrinsisch.lvl8.io/](https://blog.intrinsisch.lvl8.io/)
+Automatically deployed by Netlify to [http://feo.stat.component.ffhs.lvl8.io/](http://feo.stat.component.ffhs.lvl8.io/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/88d86080-801f-4fc0-89bb-ade22944e629/deploy-status)](https://app.netlify.com/sites/candid-pegasus-bbf558/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a3f29cbe-c9bb-4aa6-abc6-458c33387684/deploy-status)](https://app.netlify.com/sites/unrivaled-beijinho-1326fe/deploys)
 
 ## Prerequisites
 
