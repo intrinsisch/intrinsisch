@@ -41,11 +41,11 @@ export const Footer = (): JSXElement => {
           </div>
         </div>
       </div>
-      <div class="copyright text-center">
+      <div class="copyright text-center italic">
         <span>&copy;</span>
         <span>2023 Blog </span>
         <span>&#92;</span>
-        <span> Themed with Feo</span>
+        <span> Themed with Feo v3</span>
       </div>
     </footer>
   );
