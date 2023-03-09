@@ -1,0 +1,12 @@
+body {
+  background-color: var(--color-accent);
+  font-family: var(--base);
+}
+
+main {
+  background-color: var(--color-light);
+}
+
+a:not(.no-decoration) {
+  color: var(--color-link);
+}
