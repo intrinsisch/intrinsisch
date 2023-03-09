@@ -1,10 +1,12 @@
-import type { JSXElement} from "solid-js";
+import { Rating } from "@components/rating/Rating";
+import type { JSXElement } from "solid-js";
 
 export const Footer = (): JSXElement => {
   return (
     <footer class="container-fluid pt-4">
       <div class="row">
         <div class="col-sm">
+          <Rating variant="dark" md="3" xl="4" />
           <h5 class="fw-bolder">Newsletter</h5>
           <p>Sign up to our weekly newsletter:</p>
           <form action="#">

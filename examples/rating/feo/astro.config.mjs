@@ -2,4 +2,4 @@ import { defineConfig } from 'astro/config';
 import solid from '@astrojs/solid-js';
 
 // https://astro.build/config
-export default defineConfig({ integrations: [solid()], server: { port: 4002 } });
+export default defineConfig({ integrations: [solid()], server: { port: 4012 } });
