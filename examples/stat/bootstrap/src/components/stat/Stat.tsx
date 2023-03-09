@@ -51,6 +51,6 @@ export const Stat = (props: Props): JSXElement => {
           <p class="m-0 text-secondary"><small>↘︎ 90 (14%)</small></p>
         </div>
       </div>
-    </div >
+    </div>
   );
 };

@@ -2,18 +2,24 @@ import type { JSXElement } from "solid-js";
 
 export const Stat = (): JSXElement => {
   return (
-    <div class="stat stack gap-0 component">
-      <p class="stat-start">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
-        Quia, mollitia ab eius quisquam reprehenderit vitae doloremque.
-      </p>
-      <p class="stat-end">
-        Soluta sed aliquid qui esse molestias dignissimos animi alias deleniti, rem, <br />
-        iusto, maxime eum! Repellendus, eveniet autem odio harum dolorum sint possimus.
-      </p>
-      <p class="stat-end">
-        Maxime quis ipsa in! Quos culpa, et repudiandae, atque magni quibusdam harum architecto veritatis commodi beatae ullam sequi maxime corrupti totam earum?
-      </p>
+    <div class="component p-3 stat-wrapper">
+      <div class="stat">
+        <div class="stat-body stack gap-000">
+          <p>Downloads</p>
+          <p class="text-3 bold">31K</p>
+          <p class="text-dark"><small>Jan 1st - Feb 1st</small></p>
+        </div>
+        <div class="stat-body stack gap-000">
+          <p>New Users</p>
+          <p class="text-3 bold">4,200</p>
+          <p class="text-dark"><small>↗︎ 400 (22%)</small></p>
+        </div>
+        <div class="stat-body stack gap-000">
+          <p>New Registers</p>
+          <p class="text-3 bold">1,200</p>
+          <p class="text-dark"><small>↘︎ 90 (14%)</small></p>
+        </div>
+      </div>
     </div>
   );
 };

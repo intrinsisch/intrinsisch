@@ -1,20 +1,18 @@
-@use "../../node_modules/feo-css/feo.scss" with (
-  $feo-colors: (
-    "accent": rgb(253, 126, 20),
+@use "../../node_modules/feo-css/feo.scss" with ($feo-colors: ("accent": rgb(253, 126, 20),
     "light": rgb(255, 255, 255),
+    "gray": rgb(248, 249, 250),
     "link": rgb(13, 110, 253),
     "dark": rgb(33, 37, 41),
     "stat-start": rgb(25, 135, 84),
     "stat-end": rgb(214, 51, 132),
   ),
-  $feo-font-families: (
-    "base":"system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
+  $feo-font-families: ("base":"system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', 'Liberation Sans', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'",
     "monospace": "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace",
   ),
-  $feo-breakpoints: (
-    "container": 1320px,
+  $feo-breakpoints: ("container": 1320px,
   ),
 );
+
 /*
  * Disable dark mode
  */
