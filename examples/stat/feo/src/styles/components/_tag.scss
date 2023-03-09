@@ -1,0 +1,8 @@
+.tag {
+  color: var(--color-light) !important;
+  background-color: var(--color-dark);
+  padding: calc(var(--size-000) * 0.25) var(--size-00);
+  font-size: var(--size-00);
+  border-radius: var(--size-1);
+  font-weight: bold;
+}
