@@ -2,7 +2,7 @@ import type { JSXElement } from "solid-js";
 
 export const Chat = (): JSXElement => {
   return (
-    <div class="chat component">
+    <div class="chat stack gap-0 component">
       <p class="chat-start">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
         Quia, mollitia ab eius quisquam reprehenderit vitae doloremque.

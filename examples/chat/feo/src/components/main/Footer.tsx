@@ -1,4 +1,4 @@
-import { Rating } from "@components/chat/Chat";
+import { Chat } from "@components/chat/Chat";
 import type { JSXElement } from "solid-js";
 
 export const Footer = (): JSXElement => {
@@ -6,7 +6,7 @@ export const Footer = (): JSXElement => {
     <footer class="py-1 px-3 stack stack-g-1">
       <div class="switcher gap-1">
         <div class="stack stack-g-000">
-          <Rating />
+          <Chat />
           <h5>Newsletter</h5>
           <p>Sign up to our weekly newsletter:</p>
           <form action="#">
