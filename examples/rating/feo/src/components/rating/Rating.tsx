@@ -7,7 +7,7 @@ type Props = {
 }
 
 export const Rating = (props: Props): JSXElement => {
-  const classList = ["rating", "text-center"];
+  const classList = ["rating", "text-center", "component"];
   if (props.variant) {
     classList.push(`rating-${props.variant}`);
   }

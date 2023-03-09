@@ -1,4 +1,4 @@
-import { Rating } from "@components/rating/Rating";
+import { Rating } from "@components/chat/Chat";
 import type { JSXElement } from "solid-js";
 
 export const Footer = (): JSXElement => {

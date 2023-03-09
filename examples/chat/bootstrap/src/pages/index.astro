@@ -5,7 +5,7 @@ import { Navbar } from "@components/main/Navbar";
 import "@styles/main.scss";
 ---
 
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
@@ -13,7 +13,12 @@ import "@styles/main.scss";
       src="https://kit.fontawesome.com/7ebf61cb61.js"
       crossorigin="anonymous"
     ></script>
-    <title>Bootstrap: Blog</title>
+    <style is:global>
+      .component {
+        outline: 1px solid lightcoral;
+      }
+    </style>
+    <title>Bootstrap: Chat</title>
   </head>
   <body class="bg-warning">
     <Navbar />

@@ -1,7 +1,7 @@
 import type { JSXElement } from "solid-js";
 import { BlogList } from "@components/blog/BlogList";
 import { Sidebar } from "@components/side/Sidebar";
-import { Rating } from "@components/rating/Rating";
+import { Rating } from "@components/chat/Chat";
 
 export const Main = (): JSXElement => {
   return (

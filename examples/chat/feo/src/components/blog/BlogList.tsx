@@ -1,4 +1,4 @@
-import { Rating } from "@components/rating/Rating";
+import { Rating } from "@components/chat/Chat";
 import { For, JSXElement } from "solid-js";
 import { blogEntries } from "./BlogData";
 import { BlogEntry } from "./BlogEntry";
