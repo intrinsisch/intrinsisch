@@ -20,10 +20,9 @@ $rating-sizes: (
 );
 
 @each $breakpoint in map-keys($grid-breakpoints) {
-  $next: breakpoint-next($breakpoint, $grid-breakpoints);
-  $infix: breakpoint-infix($next, $grid-breakpoints);
 
-  @include media-breakpoint-up($next) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
     @each $variant,
     $size in $rating-sizes {

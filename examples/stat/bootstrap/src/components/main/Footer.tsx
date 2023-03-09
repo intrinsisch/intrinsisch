@@ -6,7 +6,7 @@ export const Footer = (): JSXElement => {
     <footer class="container-fluid pt-4">
       <div class="row">
         <div class="col-sm">
-          <Stat variant="dark" md="3" xl="4" />
+          <Stat  xs="vertical" lg="horizontal" />
           <h5 class="fw-bolder">Newsletter</h5>
           <p>Sign up to our weekly newsletter:</p>
           <form action="#">

@@ -6,16 +6,16 @@ import { Stat } from "@components/stat/Stat";
 export const Main = (): JSXElement => {
   return (
     <main class="bg-white py-5">
-      <Stat variant="warning" sm="3" lg="4" />
+      <Stat xs="vertical" sm="horizontal" />
       <div class="container">
-        <Stat variant="warning" sm="3" lg="4" />
+        <Stat xs="vertical" sm="horizontal" />
         <div class="row gx-5">
           <div class="col-md-8">
-            <Stat variant="warning" sm="3" md="2" lg="3" xxl="4" />
+            <Stat xs="vertical" sm="horizontal" />
             <BlogList />
           </div>
           <div class="col-md-4">
-            <Stat variant="warning" sm="3" md="2" xl="3" />
+            <Stat xs="vertical" />
             <Sidebar />
           </div>
         </div>

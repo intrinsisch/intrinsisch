@@ -6,16 +6,16 @@ import { Chat } from "@components/chat/Chat";
 export const Main = (): JSXElement => {
   return (
     <main class="bg-white py-5">
-      <Chat variant="warning" sm="3" lg="4" />
+      <Chat />
       <div class="container">
-        <Chat variant="warning" sm="3" lg="4" />
+        <Chat />
         <div class="row gx-5">
           <div class="col-md-8">
-            <Chat variant="warning" sm="3" md="2" lg="3" xxl="4" />
+            <Chat />
             <BlogList />
           </div>
           <div class="col-md-4">
-            <Chat variant="warning" sm="3" md="2" xl="3" />
+            <Chat />
             <Sidebar />
           </div>
         </div>
