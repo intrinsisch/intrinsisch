@@ -1,8 +1,8 @@
 # Feo: All Components
 
-Automatically deployed by Netlify to [http://feo.stat.component.ffhs.lvl8.io/](http://feo.stat.component.ffhs.lvl8.io/)
+Automatically deployed by Netlify to [http://feo.all.component.ffhs.lvl8.io/](http://feo.all.component.ffhs.lvl8.io/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a3f29cbe-c9bb-4aa6-abc6-458c33387684/deploy-status)](https://app.netlify.com/sites/unrivaled-beijinho-1326fe/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d45cb0dc-8910-490a-8acd-08ab23ce5a96/deploy-status)](https://app.netlify.com/sites/glittery-bublanina-234a83/deploys)
 
 ## Prerequisites
 
