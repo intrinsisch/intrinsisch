@@ -7,7 +7,7 @@ import { TagList } from "./TagList";
 export const Sidebar = (): JSXElement => {
   return (
     <div class="stack gap-0">
-      <Stat variant="accent" />
+      <Stat />
       <Bio />
       <TagList />
       <Ad />

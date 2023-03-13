@@ -6,9 +6,9 @@ import { Chat } from "@components/chat/Chat";
 export const Main = (): JSXElement => {
   return (
     <main>
-      <Chat variant="accent" />
+      <Chat />
       <div class="center center-w-container p-3">
-        <Chat variant="accent" />
+        <Chat />
         <div class="sidebar-r gap-5" style="--sidebar-width: 400px;">
           <BlogList />
           <Sidebar />

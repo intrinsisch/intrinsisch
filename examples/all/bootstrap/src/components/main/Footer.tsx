@@ -1,3 +1,5 @@
+import { Chat } from "@components/chat/Chat";
+import { Rating } from "@components/rating/Rating";
 import { Stat } from "@components/stat/Stat";
 import type { JSXElement } from "solid-js";
 
@@ -6,7 +8,9 @@ export const Footer = (): JSXElement => {
     <footer class="container-fluid pt-4">
       <div class="row">
         <div class="col-sm">
-          <Stat  xs="vertical" lg="horizontal" />
+          <Rating variant="dark" md="3" xl="4" />
+          <Chat />
+          <Stat xs="vertical" lg="horizontal" />
           <h5 class="fw-bolder">Newsletter</h5>
           <p>Sign up to our weekly newsletter:</p>
           <form action="#">

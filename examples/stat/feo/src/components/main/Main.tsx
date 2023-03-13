@@ -6,9 +6,9 @@ import { Stat } from "@components/stat/Stat";
 export const Main = (): JSXElement => {
   return (
     <main>
-      <Stat variant="accent" />
+      <Stat />
       <div class="center center-w-container p-3">
-        <Stat variant="accent" />
+        <Stat />
         <div class="sidebar-r gap-5" style="--sidebar-width: 400px;">
           <BlogList />
           <Sidebar />

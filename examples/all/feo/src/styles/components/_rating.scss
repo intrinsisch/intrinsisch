@@ -1,0 +1,17 @@
+.rating {
+  --rating-size-lower-bound: 0.875rem;
+  --rating-size-optimal: 3cqi;
+  --rating-size-upper-bound: 2.5rem;
+  --rating-size: clamp(var(--rating-size-lower-bound), var(--rating-size-optimal), var(--rating-size-upper-bound));
+
+  container-type: inline-size;
+  padding-block: calc(var(--rating-size) * 0.5);
+
+  >* {
+    font-size: var(--rating-size);
+  }
+}
+
+.rating-accent {
+  color: var(--color-accent);
+}
