@@ -1,0 +1,19 @@
+body {
+  background-color: var(--color-accent);
+  font-family: var(--base);
+}
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--color-accent);
+}
+
+main {
+  background-color: var(--color-light);
+}
+
+a:not(.no-decoration) {
+  color: var(--color-link);
+}

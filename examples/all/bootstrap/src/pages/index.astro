@@ -1,0 +1,28 @@
+---
+import { Footer } from "@components/main/Footer";
+import { Main } from "@components/main/Main";
+import { Navbar } from "@components/main/Navbar";
+import "@styles/main.scss";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <script
+      src="https://kit.fontawesome.com/7ebf61cb61.js"
+      crossorigin="anonymous"
+    ></script>
+    <style is:global>
+      .component {
+        outline: 1px solid darkblue;
+      }
+    </style>
+    <title>Bootstrap: Stat Component</title>
+  </head>
+  <body class="bg-warning">
+    <Navbar />
+    <Main />
+    <Footer />
+  </body>
+</html>

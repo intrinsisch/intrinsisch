@@ -1,0 +1,49 @@
+.stat {
+  --bs-stat-direction: row;
+  --bs-stat-border-width: #{$card-border-width};
+  --bs-stat-bg-color: rgb(248, 249, 250);
+  --bs-stat-border-color: #{$card-border-color};
+  --bs-stat-border-radius: #{$card-border-radius};
+  --bs-stat-border-radius: #{$card-border-radius};
+  --bs-stat-separator-vertical: var(--bs-stat-border-width) solid var(--bs-stat-border-color);
+  --bs-stat-separator-horizontal: unset;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: var(--bs-stat-direction);
+  max-width: max-content;
+  margin-inline: auto;
+  background-color: var(--bs-stat-bg-color);
+  background-clip: border-box;
+  border: var(--bs-stat-border-width) solid var(--bs-stat-border-color);
+  @include border-radius(var(--bs-stat-border-radius));
+}
+
+.stat-body {
+  padding: 1rem;
+
+  &:not(:last-child) {
+    border-right: var(--bs-stat-separator-vertical);
+    border-top: var(--bs-stat-separator-horizontal);
+  }
+}
+
+
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .stat#{$infix}-vertical {
+      --bs-stat-direction: column;
+      --bs-stat-separator-vertical: unset;
+      --bs-stat-separator-horizontal: var(--bs-stat-border-width) solid var(--bs-stat-border-color);
+    }
+
+    .stat#{$infix}-horizontal {
+      --bs-stat-direction: row;
+      --bs-stat-separator-vertical: var(--bs-stat-border-width) solid var(--bs-stat-border-color);
+      --bs-stat-separator-horizontal: unset;
+    }
+  }
+}
