@@ -8,8 +8,10 @@ export const Bio = (): JSXElement => {
       <div class="card">
         <img
           src={authorsPortrait}
-          class="card-img-top"
+          class="card-img-top img-fluid"
           alt="Author's Portrait"
+          width="4460"
+          height="2891"
         />
         <div class="card-body">
           <p class="card-text">

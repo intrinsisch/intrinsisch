@@ -18,3 +18,7 @@ main {
 a:not(.no-decoration) {
   color: var(--color-link);
 }
+
+img {
+  height: auto;
+}

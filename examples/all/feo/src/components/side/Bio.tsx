@@ -9,6 +9,8 @@ export const Bio = (): JSXElement => {
         <img
           src={authorsPortrait}
           alt="Author's Portrait"
+          width="4460"
+          height="2891"
         />
         <p class="card-body">
           <strong>Floppy</strong> is an Advocate for UX and founder of this
