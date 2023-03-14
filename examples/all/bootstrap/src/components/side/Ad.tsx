@@ -1,5 +1,5 @@
 import type { JSXElement} from "solid-js";
-import AdImage from "./ad.png";
+import AdImage from "./ad.avif";
 
 export const Ad = (): JSXElement => {
   return (

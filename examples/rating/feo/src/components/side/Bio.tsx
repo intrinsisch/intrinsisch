@@ -1,5 +1,5 @@
 import type { JSXElement } from "solid-js";
-import authorsPortrait from "./floppy-ears.jpg";
+import authorsPortrait from "./floppy-ears.avif";
 
 export const Bio = (): JSXElement => {
   return (
@@ -9,8 +9,8 @@ export const Bio = (): JSXElement => {
         <img
           src={authorsPortrait}
           alt="Author's Portrait"
-          width="4460"
-          height="2891"
+          width="2230"
+          height="1446"
         />
         <p class="card-body">
           <strong>Floppy</strong> is an Advocate for UX and founder of this

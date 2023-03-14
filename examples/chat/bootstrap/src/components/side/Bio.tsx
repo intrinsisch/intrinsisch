@@ -1,5 +1,5 @@
 import type { JSXElement} from "solid-js";
-import authorsPortrait from "./floppy-ears.jpg";
+import authorsPortrait from "./floppy-ears.avif";
 
 export const Bio = (): JSXElement => {
   return (
@@ -10,8 +10,8 @@ export const Bio = (): JSXElement => {
           src={authorsPortrait}
           class="card-img-top img-fluid"
           alt="Author's Portrait"
-          width="4460"
-          height="2891"
+          width="2230"
+          height="1446"
         />
         <div class="card-body">
           <p class="card-text">
